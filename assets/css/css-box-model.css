@@ -1,0 +1,96 @@
+.box-model{
+    width: 250px;
+    height: 250px;
+    background-color: grey;
+    background-color: rgba(0, 0, 0, .5);
+    background-color: #c33d3d;
+}
+
+.margin{
+    background-color: teal;
+    margin: 20px; 
+    /* All */
+    margin: 30px 40px;
+    /* 上下、左右 */
+    margin: 40px 50px 60px;
+    /* 上、左右、下 */
+    margin: 40px 50px 60px 70px;
+    /* 上，右、下、 左*/
+}
+
+.specific-margin{
+    background-color: thistle;    
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 15%; 
+}
+
+.padding{
+    padding: 20px;
+}   
+
+.specific-padding{
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-left: 20px;
+}   
+
+.border-style{
+    width: 300px;
+    border-width: 6px 10px 5px 8px;
+    border-style: dotted double dashed groove;
+    border-color: red blue green purple;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.border-radius{
+    border: 3px solid black;
+    padding: 25px;
+    border-radius: 0px 50px 30px 100px;
+    margin-bottom: 20px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    /* きれいなcircleのときは高さと幅が同じ数値 */
+    border: 1px solid red;
+    border-radius: 100px;
+    text-align: center;
+    padding: 20px;
+    /* box-shadow: x(holizontal) y(vertical) blur color; */
+    box-shadow: -5px -5px 10px black;
+    /*　マイナスだと左、下に行く。座標で考える */
+    margin: 0 auto 0 auto;
+    /* これでもセンターになる */
+}
+
+/* コンテンツが枠からはみ出る場合 */
+.overflow{
+    border: 2px solid red;
+    width: 200px;
+    /* height: 150px; */
+    overflow: scroll;
+    overflow: hidden;
+    /* はみ出る分は表示されない */
+    overflow: auto;
+    /* 自動調整する サイズが小さいと自動でカーソルを付ける　十分だとカーソルはなし */
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    /* これでもセンターになる */
+}
+
+/* centering contect */
+.centering-object{
+    border:2px solid black;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* autoにすればblock elementなら中心にいく */
+
+}

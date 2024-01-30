@@ -1,0 +1,185 @@
+/* Colors */
+
+*{
+    color: gray;
+    font-family: Arial;
+    font-size: 16px;
+    /* ↑親のサイズになる */
+}
+
+.color{
+    color: black;
+}
+
+/* unique color */
+.rgb{
+    color: rgb(47, 88, 66);
+}
+
+/* 色の上にカーソルを合わせると、希望の色を選べる */
+.rgba{
+    color: rgb(4, 0, 255);
+    background-color: rgba(0, 238, 255, 0.164);
+}
+
+/* #に6桁の数字でも指定可能 */
+.hexcode{
+    color: #FFFFFF;
+    background-color: #833131; 
+}
+
+
+/* Font-Family */
+/* windowsのデフォルト */
+.serif{
+    font-family: serif;
+}
+
+/* macのデフォルト sans=without decoration */
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+/* Font-Size */
+
+.px{
+    font-size: 32px;
+}
+
+/* 1em = 16px, em（エム） = cmみたいなサイズでCSSだけで使う 相対的に変わる */
+.em{
+    font-size: 2em;
+}
+
+/* universalが親になる */
+/*　デフォルトの16pxに対してどうか。h以外は全部16px */
+.percent{
+    font-size: 200%;
+}
+
+/* Font-Weight */
+.bold{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.light{
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.weight100{
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.weight900{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+/* Font Style */
+.italic{
+    font-style: italic;
+}
+
+/* obliqueは30度くらい傾いていitalicみたいに見える。italicが使えないフォントで斜体にしたいときに使える */
+.oblique{
+    font-family: oblique;
+}
+
+.italic span{
+    font-family: normal;
+}
+
+
+/* text tranform */
+/* 全部小文字 */
+.lowercase{
+    text-transform: lowercase;
+}
+
+/* 全部大文字 */
+.uppercase{
+    text-transform: uppercase;
+}
+
+/* first letter of word is capitalized */
+.capitalize{
+    text-transform: capitalize;
+}
+
+
+/* text decoration */
+
+.underline{
+    text-decoration: underline;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.none{
+    text-decoration: none;
+}
+
+
+/* text-align */
+/* デフォルトでは左から表示される */
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+/* text-indent */
+
+.text-indent-px{
+    text-indent: 20px;
+}
+
+/*  横を100%としたときのどれくらいか。相対的に*/
+.text-indent-percent{
+    text-indent: 50%;
+}
+
+/* 2em =2文字分 */
+.text-indent-em{
+    text-indent: 10em;
+}
+
+/* letter spacing */
+.letter-spacing-5px{
+    letter-spacing: 5px;
+    /* letter-spacing: -5px; */
+}
+
+.letter-spacing-15px{
+    letter-spacing: 15px;
+}
+
+/* word spacing */
+.word-spacing-20px{
+    word-spacing: 20px;
+}
+
+.word-spacing-30px{
+    word-spacing: 30px;
+}
+
+.word-spacing-minus-10px{
+    word-spacing: -10px;
+}

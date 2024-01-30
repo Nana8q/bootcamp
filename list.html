@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists ELements</title>
+    <link rel="stylesheet" href="assets/css/css-list.css">
+</head>
+<body>
+    <!-- ol = ordered list(parent) (1,2,3/a,b,c) -->
+    <!-- decimal =数字 disc＝・　circle=白丸-->
+    <!-- li = list item(child) -->
+    <h2>Fruits</h2>
+    <ol class="alpha">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Strawberry</li>
+    </ol>
+    <hr>
+    <!-- ul = unordered list(parent) -->
+    <h2>Courses</h2>
+    <ul class="circle">
+        <li>Bootcamp</li>
+        <li>Web Design</li>
+        <li>Web Development</li>
+    </ul>
+
+    <!-- nested list  ulだけデフォルトで箇条書きの表示は変わる-->
+    <h2>Nested List</h2>
+    <ol class="roman">
+        <li>fruits
+            <ul class="square">
+                <li>Mango</li>
+                <li>Pineapple</li>
+            </ul>
+        </li>
+        <li>desserts
+            <ol class="disc">
+                <li>Ice Cream</li>
+                <li>Apple Pie</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- CSS側で箇条書きのデザインは変えられるけど、HTMLも重要 -->
+
+    <!-- ;ist style position -->
+    <h2>List Style position</h2>
+    <ul class="ul-outside">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo et at ullam dolores saepe?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem provident iure voluptate odit officiis.</li>
+    </ul>
+    <ol class="ol-inside">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo et at ullam dolores saepe?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem provident iure voluptate odit officiis.</li>
+    </ol>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo et at ullam dolores saepe?
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem provident iure voluptate odit officiis.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* HTMLのサイズよりもCSSの方が優先される */
+/* image properties */
+.photo-1{
+    width: 100%;
+    height: 300px;
+}
+
+.photo-2{
+    width: 450px;
+    height: 450px;
+}
+
+.bg-image{
+    background-image: url(../images/gar.jpg);
+    /* ".." -> folder, folder ,folderを直接指定したいときのショートカット*/
+    width: 700px;
+    height: 500px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    /* デフォルトでは写真が小さすぎると繰り返しれる */
+    background-position: center;
+    /* デフォルトではleft topになっている */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* X=vertical, y=holoziontal */
+    background-size: cover;
+    /* ポジションが真ん中からは始まる */
+    background-size: contain;
+    /* best size of your photo */
+}
+
+.bg-attachment{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/junk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-shorthand{
+    width: 400px;
+    height: 400px;
+    background: aqua url(../images/gar.jpg) no-repeat bottom;
+    background-size: contain;
+}

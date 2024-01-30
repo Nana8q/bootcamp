@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* これがないとうまくレイアウトされない。よく使う！*/
+}
+
+.float-left{
+    border: 2px solid red;
+    float: left;
+    /* 次のelementにも適用されてしまう→Clearを使えばOK */
+    width: 25%;
+    padding: 10px;
+
+}
+
+.float-right{
+    border: 2px solid blue;
+    /* clear: left; */
+    /* leftからclearする →通常に戻る*/
+    float: right;
+    width: 24%;
+    width: 25%;
+    padding: 15px;
+
+}
+
+.clear-float{
+    clear: both;
+}
+
+.content-box{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border: 10px solid green;
+    /* actual box sixe = width/height + padding + border */
+    box-sizing: content-box;
+    /* default。これがあるから適用されていない*/
+}
+
+
+.border-box{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border: 10px solid purple;
+    /* box-sizing: border-box; */
+    /* don't add up padding & border サイズを調整しやすくなる*/
+}
+
+/* position 
+        offset properties--to moved the elements
+            left:0;
+            right:;
+            top:0;
+            bottom:;
+        
+        z-index:- to + value --- adjusting the layer order of the postitioned elements.
+*/
+
+.static{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: static; /*default-- doesn't move the element*/
+    left: 250px; /* staticだから動かない */
+}
+
+.relative{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    position: relative;
+    left: 250px;
+    top: 100px;
+    background-color: blue;
+    z-index: 10;
+    /* 他の要素より上にくる */
+}
+
+.parent-position{
+    width: 400px;
+    height: 400px;
+    border: 2px solid gray;
+    position: relative;
+    /* これがないとchildのpositionはbodyに伴って変わる */
+    background-color: gray;
+}
+
+.child-position{
+    width: 200px;
+    height: 200px;
+    border: 2px solid purple;
+    position: absolute;
+    right: 50px;
+    /* 右端を基準として50px左側にずれる */
+    bottom: 75px;
+    /* 下端を基準として75px上側にずれる */
+}
+
+.fixed{
+    width: 200px;
+    height: 200px;
+    border: 2px solid tomato;
+    position: fixed;
+    /* スクロールしても動かない */
+    right: 90px;
+    bottom: 80px;
+    background-color: tomato;
+    z-index: 11;
+    /* リミットはない。数字が上の方が上・マイナスなら下に行く */
+}
+
+/* display */
+
+.inline{
+    border: 1px solid red;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline;
+    /* widthに関わらずきゅっとなる。inlineだから */
+}
+
+.block{
+    border: 1px solid green;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.inline-block{
+    border: 1px solid purple;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: teal;
+    padding: 20px;
+    /* float: left;
+    margin: 20px; これは何が問題なのか*/
+    display: inline-block;
+}
+
+/* Question:float left, inline-block　 */

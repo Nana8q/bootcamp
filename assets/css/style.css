@@ -1,0 +1,43 @@
+/* selectors */
+/* *は全部に適用 */
+*{
+    /* universal */
+    text-decoration: underline;
+    color: green;
+}
+
+/* element */
+p{
+    background-color: aqua;
+}
+
+/*class = .  */
+.para{
+    color: red;
+}
+
+/* id = # */
+#special{
+    background-color: purple;
+}
+
+/* priority / top-level selector */
+/* same selector, same property -> the last selector will apply. more specific is higher priority */
+/* inline element > id > class > element > universal(*) */
+
+#first-priority{
+    background-color: yellow;
+}
+
+.second-priority{
+    background-color: turquoise;
+}
+
+h4{
+    background-color: magenta;
+}
+
+h4{
+    background-color: thistle;
+    color: red
+}
